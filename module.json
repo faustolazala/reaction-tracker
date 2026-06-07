@@ -4,7 +4,9 @@
   "description": "Adds a reaction-use toggle to the built-in Encounter Tracker for D&D 5e combat.",
   "authors": [
     {
-      "name": "Codex"
+      "name": "faustolazala",
+      "email": "kaozlord123@gmail.com",
+      "url": "https://paypal.me/kaozlord123"
     }
   ],
   "version": "0.1.0",
