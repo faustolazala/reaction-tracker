@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Package module
+        run: |
+          zip -r reaction-tracker.zip module.json README.md scripts styles
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.1.0
+          name: Reaction Tracker v0.1.0
+          make_latest: true
+          generate_release_notes: true
+          files: |
+            module.json
+            reaction-tracker.zip

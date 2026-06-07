@@ -1,0 +1,28 @@
+{
+  "id": "reaction-tracker",
+  "title": "Reaction Tracker",
+  "description": "Adds a reaction-use toggle to the built-in Encounter Tracker for D&D 5e combat.",
+  "authors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "version": "0.1.0",
+  "url": "https://github.com/faustolazala/reaction-tracker",
+  "manifest": "https://github.com/faustolazala/reaction-tracker/releases/latest/download/module.json",
+  "download": "https://github.com/faustolazala/reaction-tracker/releases/download/v0.1.0/reaction-tracker.zip",
+  "readme": "https://github.com/faustolazala/reaction-tracker/blob/main/README.md",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "system": [
+    "dnd5e"
+  ],
+  "esmodules": [
+    "scripts/reaction-tracker.js"
+  ],
+  "styles": [
+    "styles/reaction-tracker.css"
+  ]
+}
